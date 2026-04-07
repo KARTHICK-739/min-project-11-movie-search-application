@@ -43,7 +43,7 @@ function App() {
       <MovieList movies={movies} setSelectedMovie={setSelectedMovie} />;
       <h1>Movie Search App</h1>
       <div className="header">
-        <h1>🎬 Movie Explorer</h1>
+        <h1>Movie Explorer</h1>
 
         <p>Search your favourite movies</p>
       </div>
