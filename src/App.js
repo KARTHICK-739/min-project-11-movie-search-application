@@ -2,8 +2,7 @@ import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import MovieList from "./components/MovieList";
 import "./App.css";
-import MoviePopup from "./components/moviepopup";  
-
+import MoviePopup from "./components/moviepopup";
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -12,8 +11,6 @@ function App() {
   const [selectedMovie, setSelectedMovie] = useState(null);
 
   const API_KEY = "90e197fd";
-
- 
 
   const searchMovies = async (title) => {
     setLoading(true);
@@ -40,7 +37,7 @@ function App() {
 
   return (
     <div className="app">
-      <MovieList movies={movies} setSelectedMovie={setSelectedMovie} />;
+      <MovieList movies={movies} setSelectedMovie={setSelectedMovie} />
       <h1>Movie Search App</h1>
       <div className="header">
         <h1>Movie Explorer</h1>
