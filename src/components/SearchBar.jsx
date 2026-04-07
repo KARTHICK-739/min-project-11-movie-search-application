@@ -12,7 +12,7 @@ function SearchBar({ searchMovies }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="searchBox">
       <input
         type="text"
         placeholder="Search movie..."

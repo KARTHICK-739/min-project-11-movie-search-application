@@ -1,6 +1,6 @@
 function MovieCard({ movie }) {
   return (
-    <div>
+    <div className="card">
       <img src={movie.Poster} alt={movie.Title} />
 
       <h3>{movie.Title}</h3>
