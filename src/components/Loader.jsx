@@ -1,1 +1,0 @@
-<div className="loader"></div>;

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import MovieList from "./components/MovieList";
+import "./App.css";
+
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -33,12 +35,12 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="app">
       <h1>Movie Search App</h1>
 
       <SearchBar searchMovies={searchMovies} />
-
-      {loading && <p>Loading...</p>}
+      
+      {loading && <div className="loader"></div>}
 
       {error && <p>{error}</p>}
 
