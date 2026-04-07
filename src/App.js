@@ -37,17 +37,16 @@ function App() {
 
   return (
     <div className="app">
-      <MovieList movies={movies} setSelectedMovie={setSelectedMovie} />
-      <h1>Movie Search App</h1>
       <div className="header">
-        <h1>Movie Explorer</h1>
+        <h1>🎬 Movie Explorer</h1>
 
         <p>Search your favourite movies</p>
       </div>
+
       <SearchBar searchMovies={searchMovies} />
-      {loading && <div className="loader"></div>}
-      {error && <p>{error}</p>}
-      <MovieList movies={movies} />
+
+      <MovieList movies={movies} setSelectedMovie={setSelectedMovie} />
+
       {selectedMovie && (
         <MoviePopup
           movie={selectedMovie}
